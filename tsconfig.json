@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2020", /* 変換後のJavaScriptのバージョン */
+    "module": "nodenext", /* モジュールの仕組み（Node.jsの標準） */
+    "moduleResolution": "nodenext", /* 💡追加：モジュールを正しく探させるため必須 */
+    "ignoreDeprecations": "6.0", /* 💡追加：TypeScript最新版の非推奨警告を消す */
+    "rootDir": "./src", /* 💡追加：TypeScriptのコードを置く場所 */
+    "outDir": "./dist", /* 💡追加：コンパイル後のJSコードが出力される場所 */
+    "sourceMap": true, /* 💡追加：後述するデバッグ機能を使うために必須の設定 */
+    "esModuleInterop": true, /* 異なるモジュールシステム間の互換性を保つ */
+    "strict": true, /* 厳格な型チェックを有効にする */
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*" /* srcフォルダ以下のすべてのファイルだけを対象にする */
+  ],
+  "exclude": [
+    "node_modules" /* node_modulesフォルダは対象にしない */
+  ]
+}
