@@ -15,12 +15,12 @@ class BaseCharacter implements ICharacter {
     throw new Error("Method not implemented.");
   }
 
-  takeDamege(damege: number): void {
-    this.hp -= damege;
+  takeDamege(damage: number): void {
+    this.hp -= damage;
     if (this.hp < 0) {
       this.hp = 0;
     }
-    console.log(`${this.name}が${damege}ダメージを受けた! 残り${this.hp}hp`);
+    console.log(`${this.name}が${damage}ダメージを受けた! 残り${this.hp}hp`);
   }
 }
 
