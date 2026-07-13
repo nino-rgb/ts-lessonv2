@@ -16,6 +16,7 @@ class PayPalPayment implements Payment {
   }
 }
 
+//課題回答
 class PayPayPayment implements Payment {
   processPayment(amount: number): void {
     console.log(`PayPayで${amount}円 払います`);
@@ -24,6 +25,7 @@ class PayPayPayment implements Payment {
 
 const totalAmount = 5000;
 
+//課題回答追加済
 const myPayments: Payment[] = [new CreditCardPayment(), new PayPalPayment(), new PayPayPayment()];
 
 console.log("--- 決済テスト開始 ---");
@@ -34,3 +36,4 @@ for (const payment of myPayments) {
 //--- 決済テスト開始 ---
 // クレジットカードで 5000円 の支払いを処理しています...
 // PayPalで 5000円 の支払いを処理しています...
+//PayPayで5000円 払います
